@@ -1,0 +1,346 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap');
+
+:root {
+  --bg-color: #0c0d0e;
+  --card-bg: #141618;
+  --text-main: #e2e8f0;
+  --text-muted: #8c96a3;
+  --accent-gothic: #8b0000;
+  --accent-hover: #b22222;
+  --border-color: #26292d;
+  --border-glow: #3a3f47;
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: var(--text-main);
+}
+
+.login-logo {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
+}
+
+.login-subtitle {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group input {
+  padding: 12px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-gothic);
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--accent-gothic);
+  color: #ffffff;
+  border: 1px solid var(--accent-hover);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--accent-hover);
+}
+
+.login-msg {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+header {
+  text-align: center;
+  padding: 40px 0 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.site-logo {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-logo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(178, 34, 34, 0.4);
+}
+
+header h4 {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-gothic);
+}
+
+
+section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-bottom: 1px solid var(--accent-gothic);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+#menu h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin: 30px 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu h3::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#menu ul li {
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid transparent;
+  border-left: 2px solid var(--accent-gothic);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+
+#menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-glow);
+  border-left-color: var(--accent-hover);
+  transform: translateX(4px);
+}
+
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-img-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.menu-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(30%) contrast(110%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.menu-img-container:hover .menu-img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.menu-img.main-dishes {
+  object-fit: cover;
+  object-position: top center;
+  height: 100%;
+}
+
+.menu-img.drinks {
+  object-fit: cover;
+  object-position: bottom left;
+  height: 100%;
+}
+
+.menu-img.beers {
+  object-fit: cover;
+  object-position: bottom right;
+  height: 100%;
+}
+
+
+#contactos div {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 2px solid var(--border-color);
+}
+
+#contactos h3 {
+  font-size: 1rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+#contactos a {
+  color: var(--accent-gothic);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contactos a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.link-rojo {
+  color: red;
+  text-decoration: none;
+}
+
+.link-rojo:visited {
+  color: red;
+}
